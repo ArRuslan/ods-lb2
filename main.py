@@ -93,8 +93,7 @@ def task2() -> None:
         Fxbn = Fx.evalf(subs={x: bn})
 
         avgn = avg - son * (n1 / n2) * (fxan / Fxan) + son * (n3 / n2) * (fxbn / (1 - Fxbn))
-        sqn = sq0 + (avg - avgn) ** 2 - sqn * (n1 / n2) * an * (fxan / Fxan) + \
-              sqn * (n3 / n2) * bn * (fxbn / (1 - Fxbn))
+        sqn = sq0 + (avg - avgn) ** 2 - sqn * (n1 / n2) * an * (fxan / Fxan) + sqn * (n3 / n2) * bn * (fxbn / (1 - Fxbn))
 
         son = sqrt(sqn)
 
@@ -115,8 +114,8 @@ def main() -> None:
 
     print()
 
-    # print("Завдання 2")
-    # task2()
+    print("Завдання 2")
+    task2()
 
 
 if __name__ == '__main__':
